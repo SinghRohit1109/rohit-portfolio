@@ -372,3 +372,76 @@ footer {
     border-top: 1px solid #e2e8f0;
     color: #64748b;
 }
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: none; /* hide menu on small screen */
+    }
+
+    /* HERO */
+    .hero {
+        padding: 120px 20px 40px;
+        text-align: center;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-name {
+        font-size: 32px;
+    }
+
+    .hero-title {
+        font-size: 16px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+    /* STATS */
+    .stats-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* ABOUT */
+    .about-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* EXPERIENCE */
+    .experience-section {
+        padding: 50px 20px;
+    }
+
+    .timeline {
+        padding-left: 15px;
+    }
+
+    .timeline-dot {
+        left: -25px;
+    }
+
+    /* CONTACT */
+    .contact-section {
+        padding: 50px 20px;
+    }
+
+}
