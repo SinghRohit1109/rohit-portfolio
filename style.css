@@ -461,3 +461,32 @@ footer {
     }
 
 }
+
+/* Featured product */
+#product { scroll-margin-top: 90px; }
+.product-section { padding: 100px 32px; background: #f5f3ff; border-block: 1px solid #e4defa; }
+.product-container { max-width: 1120px; margin: auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 340px); gap: 64px; align-items: start; }
+.product-eyebrow { color: #6041c6; font-size: 12px; font-weight: 700; letter-spacing: 2px; margin-bottom: 16px; }
+.product-copy h2 { font-size: clamp(30px, 4vw, 44px); line-height: 1.15; letter-spacing: -1.2px; margin-bottom: 16px; }
+.product-headline { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.4; font-weight: 600; color: #5b3db4; margin-bottom: 20px; }
+.product-summary, .product-details p, .product-steps { font-size: 15px; line-height: 1.8; color: #475569; }
+.product-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 28px; }
+.product-tags span { font-size: 11px; font-weight: 600; background: #fff; border: 1px solid #ded7f5; color: #5137a0; padding: 7px 11px; border-radius: 6px; }
+.product-details h3 { font-size: 15px; margin: 22px 0 8px; }
+.product-steps { padding-left: 20px; }
+.product-steps li { padding-left: 4px; margin-bottom: 10px; }
+.product-steps strong { color: #1e293b; }
+.product-demo { width: 100%; margin: 0; background: #fff; padding: 18px; border: 1px solid #e4defa; border-radius: 22px; box-shadow: 0 18px 50px rgba(60, 40, 100, .08); }
+.product-demo-heading { display: flex; justify-content: space-between; gap: 10px; font-size: 10px; font-weight: 700; letter-spacing: 1px; color: #6041c6; padding: 2px 0 14px; }
+.product-demo video { display: block; width: 100%; aspect-ratio: 1 / 2; background: #15132a; border-radius: 12px; }
+.product-demo figcaption { font-size: 11px; color: #64748b; line-height: 1.7; margin-top: 14px; }
+.product-hero-link { display: inline-block; color: #5b3db4; font-size: 14px; font-weight: 600; margin: 20px 0 0 18px; text-underline-offset: 5px; }
+.product-section a:focus-visible, .product-demo video:focus-visible { outline: 3px solid #6041c6; outline-offset: 5px; }
+@media (max-width: 850px) {
+    .product-container { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+    .product-demo { max-width: 340px; justify-self: center; }
+}
+@media (max-width: 480px) {
+    .product-section { padding: 64px 20px; }
+    .product-hero-link { display: block; margin-left: 0; }
+}
