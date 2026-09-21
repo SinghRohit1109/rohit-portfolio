@@ -490,3 +490,8 @@ footer {
     .product-section { padding: 64px 20px; }
     .product-hero-link { display: block; margin-left: 0; }
 }
+
+/* Resume download */
+.cv-download { margin-left: 12px; }
+.cv-download:focus-visible { outline: 3px solid #2563eb; outline-offset: 4px; }
+@media (max-width: 380px) { .cv-download { margin-left: 0; } }
